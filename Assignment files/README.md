@@ -1,6 +1,6 @@
 # Alcami Elements Website
 
-A pixel-perfect implementation of the Alcami Elements website design, built with HTML, CSS, and vanilla JavaScript.
+A pixel-perfect implementation of the Alcami Elements website design, built with HTML, CSS, and JavaScript.
 
 ## Features
 
