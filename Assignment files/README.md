@@ -86,7 +86,3 @@ The website includes several interactive elements:
 - No external dependencies or frameworks used
 - Semantic HTML structure
 - WAI-ARIA compliant for accessibility
-
-## License
-
-© 2024 ALCAMI ELEMENTS. ALL RIGHTS RESERVED. 
