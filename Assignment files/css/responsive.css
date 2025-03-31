@@ -1,0 +1,1018 @@
+/* Tablet Styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    :root {
+        --header-height: 100px;
+    }
+
+    /* Header */
+    .nav-links {
+        display: none;
+    }
+
+    /* Hide the Try Alcami button in the header for mobile/tablet view */
+    .nav-actions .cta-button {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin-left: 20px;
+        width: 30px;
+        height: 24px;
+        position: relative;
+        z-index: 101;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--text-color);
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        background-color: var(--background-color);
+        z-index: 999;
+        overflow-y: auto;
+        transition: all 0.3s ease;
+        padding: 20px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-menu.active {
+        right: 0;
+    }
+
+    .mobile-menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-menu-close {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+
+    .mobile-nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-nav-links li {
+        margin-bottom: 20px;
+    }
+
+    .mobile-nav-links a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 18px;
+        font-weight: 500;
+        display: block;
+        padding: 10px 0;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-nav-links a:hover {
+        color: var(--primary-color);
+    }
+
+    .mobile-cta {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .nav-container {
+        padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: left;
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-stats {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .stat {
+        flex: 0 0 auto;
+        margin-right: 40px;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .hero-image img {
+        max-width: 400px;
+    }
+
+    /* Taste Section */
+    .taste-section {
+        padding: 15px 20px;
+        padding-bottom: 40px;
+    }
+
+    .taste-section h2 {
+        font-size: 26px;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        padding: 14px 24px;
+    }
+
+    /* Ingredients Section */
+    .ingredients-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .ingredients-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .ingredients-content {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .ingredients-content h2 {
+        font-size: 36px;
+    }
+
+    /* Guarantee Section */
+    .guarantee-section {
+        margin: 40px 0;
+    }
+    
+    .guarantee-row {
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .guarantee-title {
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .guarantee-title h3 {
+        margin-right: 0;
+    }
+    
+    .guarantee-item {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    /* As Seen In Section */
+    .as-seen-section {
+        padding: 30px 0;
+    }
+    
+    .brand-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    
+    .as-seen-text {
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .brand-logo {
+        height: 20px;
+        margin: 0 15px;
+    }
+
+    /* Product Showcase Section */
+    .product-layout {
+        flex-direction: column;
+    }
+    
+    .product-left-column,
+    .product-right-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .product-left-column {
+        margin-bottom: 40px;
+    }
+    
+    .thumbnail-gallery {
+        margin-bottom: 20px;
+    }
+
+    /* Comparison Section */
+    .comparison-container {
+        padding: 0 15px;
+    }
+    
+    .comparison-heading {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .comparison-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    .comparison-table {
+        min-width: 800px; /* Ensure table is wide enough to scroll on mobile */
+    }
+
+    /* Founder Section */
+    .founder {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .founder-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    /* Reviews Section */
+    .review-card {
+        flex: 0 0 50%;
+    }
+
+    /* FAQ Section */
+    .faq-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    /* Alcami Elements Product Section */
+    .alcami-elements-product {
+        padding: 25px 15px;
+        margin: 0;
+    }
+
+    .product-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .product-left-section {
+        width: 100%;
+    }
+
+    .product-image-container {
+        padding-left: 80px;
+    }
+
+    .ingredients-list {
+        left: 0;
+        width: 70px;
+    }
+
+    .ingredient-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ingredient-name {
+        margin-top: 5px;
+    }
+
+    .main-product-image {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .product-thumbnails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail-row {
+        justify-content: center;
+    }
+
+    .product-right-section {
+        width: 100%;
+    }
+
+    .flavor-options {
+        flex-wrap: wrap;
+    }
+
+    .flavor-option {
+        flex: 0 0 calc(33.333% - 10px);
+    }
+
+    .included-items {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .included-item {
+        width: 100%;
+    }
+
+    .subscription-option {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .price {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .item-image img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Comparison Table Responsive Styles */
+    .comparison-heading {
+        font-size: 32px;
+    }
+
+    .product-image {
+        height: 90px;
+    }
+
+    .alcami-cell .product-image {
+        height: 110px;
+    }
+
+    .alcami-logo {
+        font-size: 22px;
+    }
+}
+
+/* Alcami Elements Product Section Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .product-container {
+        padding: 0 20px;
+    }
+
+    .ingredients-list {
+        left: -60px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product-left-section,
+    .product-right-column {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .ingredients-list {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ingredient-item {
+        width: auto;
+        margin: 0 10px 10px 0;
+    }
+
+    .main-product-image {
+        max-height: 400px;
+    }
+
+    .thumbnail-gallery {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --header-height: 80px;
+    }
+
+    body {
+        padding-top: var(--header-height);
+    }
+
+    .announcement-bar {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .main-nav {
+        padding: 10px 0;
+    }
+
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 24px;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .stat {
+        text-align: left;
+        margin-right: 0;
+    }
+
+    .stat h2 {
+        font-size: 36px;
+    }
+
+    .rating-badge {
+        padding: 6px 12px;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* Taste Section */
+    .taste-section {
+        padding: 10px 15px;
+        padding-bottom: 30px;
+    }
+
+    .taste-section h2 {
+        font-size: 22px;
+        padding: 12px 20px;
+        border-radius: 30px;
+    }
+
+    /* Guarantee Section */
+    .guarantee-row {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .guarantee-item {
+        flex: 0 0 100%;
+        margin-bottom: 5px;
+    }
+    
+    .guarantee-text h4 {
+        font-size: 13px;
+    }
+    
+    .guarantee-text p {
+        font-size: 11px;
+    }
+
+    /* As Seen In Section */
+    .as-seen-section {
+        padding: 25px 0;
+    }
+    
+    .brand-logos {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .brand-logo {
+        height: 18px;
+        margin: 0 10px 15px;
+        flex: 0 0 calc(33.333% - 20px);
+    }
+
+    /* Reviews Section */
+    .review-card {
+        flex: 0 0 100%;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    /* Alcami Elements Product Section */
+    .alcami-elements-product {
+        padding: 15px 10px;
+        margin: 10px;
+    }
+
+    .product-image-container {
+        padding-left: 60px;
+    }
+
+    .ingredients-list {
+        width: 50px;
+    }
+
+    .ingredient-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .ingredient-name span {
+        font-size: 10px;
+    }
+
+    .ingredient-type {
+        font-size: 8px !important;
+    }
+
+    .main-product-image {
+        max-width: 200px;
+    }
+
+    .product-header h2 {
+        font-size: 26px;
+    }
+
+    .thumbnail {
+        width: 55px;
+        height: 55px;
+    }
+
+    .flavor-option {
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .flavor-option label img {
+        width: 70px;
+        height: 100px;
+    }
+
+    .subscription-options {
+        padding: 15px 12px;
+    }
+
+    .most-popular-banner {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .subscription-benefits li {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .add-to-cart-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .item-image img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Comparison Table Responsive Styles */
+    .comparison-heading {
+        font-size: 28px;
+    }
+
+    .header-cell {
+        padding: 12px 10px;
+    }
+
+    .benefits-label {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .product-image {
+        height: 80px;
+    }
+
+    .alcami-cell .product-image {
+        height: 100px;
+    }
+
+    .product-image img {
+        max-width: 60%;
+    }
+
+    .alcami-cell .product-image img {
+        max-width: 65%;
+    }
+
+    .product-name {
+        font-size: 12px;
+    }
+
+    .alcami-logo {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .table-row {
+        flex-wrap: wrap;
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    :root {
+        --header-height: 70px;
+    }
+
+    .announcement-bar {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .logo img {
+        height: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .stat h2 {
+        font-size: 32px;
+    }
+
+    .stat p {
+        font-size: 14px;
+    }
+
+    /* Taste Section */
+    .taste-section {
+        padding: 10px 10px;
+        padding-bottom: 25px;
+    }
+
+    .taste-section h2 {
+        font-size: 18px;
+        padding: 10px 16px;
+        border-radius: 25px;
+        letter-spacing: -0.01em;
+    }
+
+    /* Guarantee Section */
+    .guarantee-row {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .guarantee-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .guarantee-item {
+        gap: 10px;
+    }
+    
+    .guarantee-text h4 {
+        font-size: 12px;
+    }
+    
+    .guarantee-text p {
+        font-size: 10px;
+    }
+
+    /* As Seen In Section */
+    .as-seen-section {
+        padding: 20px 0;
+    }
+    
+    .brand-logos {
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .brand-logo {
+        height: 16px;
+        margin: 0 5px 10px;
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    /* Newsletter Form */
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    /* Alcami Elements Product Section */
+    .product-header h2 {
+        font-size: 28px;
+    }
+
+    .flavor-option {
+        flex: 0 0 100%;
+    }
+
+    .flavor-content img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .subscription-options {
+        padding: 20px 15px;
+    }
+
+    .favorite-item {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .cta-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-images img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .add-to-cart-btn {
+        padding: 12px 24px;
+    }
+
+    .item-image img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Comparison Table Responsive Styles */
+    .comparison-heading {
+        font-size: 24px;
+    }
+
+    .table-header {
+        flex-wrap: wrap;
+    }
+
+    .header-cell {
+        flex: 1 0 50%;
+        padding: 10px 5px;
+    }
+
+    .header-cell.benefits-label {
+        flex: 1 0 100%;
+        justify-content: center;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .product-image {
+        height: 70px;
+    }
+
+    .alcami-cell .product-image {
+        height: 90px;
+    }
+
+    .product-image img {
+        max-width: 70%;
+    }
+
+    .alcami-cell .product-image img {
+        max-width: 75%;
+    }
+
+    .product-name {
+        font-size: 11px;
+    }
+
+    .alcami-logo {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .table-row {
+        flex-wrap: wrap;
+    }
+
+    .row-cell {
+        flex: 1 0 50%;
+    }
+
+    .label-cell {
+        flex: 1 0 100%;
+        justify-content: center;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
+
+/* Extra Small Mobile Styles (max-width: 400px) */
+@media screen and (max-width: 400px) {
+    .header-cell {
+        flex: 1 0 100%;
+        margin-bottom: 15px;
+    }
+
+    .header-cell.benefits-label {
+        margin-bottom: 15px;
+    }
+
+    .product-image {
+        height: 90px;
+    }
+
+    .alcami-cell .product-image {
+        height: 110px;
+    }
+
+    .product-image img {
+        max-width: 50%;
+    }
+
+    .alcami-cell .product-image img {
+        max-width: 55%;
+    }
+
+    .row-cell {
+        flex: 1 0 100%;
+    }
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: var(--white);
+    padding: 80px 40px;
+    transition: var(--transition);
+    z-index: 999;
+    overflow-y: auto;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 20px;
+}
+
+.mobile-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding: 10px 0;
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 998;
+    backdrop-filter: blur(4px);
+}
+
+.mobile-menu-overlay.active {
+    display: block;
+}
